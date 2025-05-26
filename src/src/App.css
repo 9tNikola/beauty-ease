@@ -1,0 +1,41 @@
+/* Base styles and Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* Main Container */
+.cherie-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Main Content Area */
+.cherie-main {
+  background-color: #fff;
+  position: relative;
+}
+
+.service-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Responsive Styles for Main Layout */
+@media (max-width: 768px) {
+  .cherie-main {
+    flex-direction: column;
+  }
+}

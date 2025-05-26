@@ -1,0 +1,85 @@
+
+/* Enhanced Booking Section */
+.booking-container {
+    text-align: center;
+    padding: 0 80px 60px;
+    background: linear-gradient(135deg, #f8fbf8 0%, #ffffff 100%);
+    position: relative;
+  }
+  
+  .booking-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a0c49d, transparent);
+  }
+  
+  .booking-header {
+    margin-bottom: 40px;
+    border: 2px solid #fce8e8;
+    background-color: #F5FAF5;
+    padding: 100px;
+    border-radius: 18px
+  }
+  
+  .booking-title {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .booking-subtitle {
+    color: #666;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .book-button {
+    background: linear-gradient(135deg, #6b46c1, #553c9a);border: none;
+    color: white;
+    margin-top: 20px;
+    padding: 18px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(160, 196, 157, 0.3);
+  }
+  
+  .book-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #c714eb 0%, #6b04e8 100%);
+    transition: left 0.4s ease;
+  }
+  
+  .book-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(160, 196, 157, 0.4);
+  }
+  
+  .book-button:hover::before {
+    left: 0;
+  }
+  
+  .book-button span {
+    position: relative;
+    z-index: 2;
+  }
